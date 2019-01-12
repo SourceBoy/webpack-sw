@@ -1,2 +1,1 @@
-# webpack-sw
-webpack service worker bug
+Current version of webpack (4.28.4) with webpack-cli (3.2.1) does not pack service worker files with importScripts() correctly. Variables defined in the global scope within the imported scripts are inaccessible by the scripts importing them.
